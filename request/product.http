@@ -1,0 +1,26 @@
+GET http://localhost:3000/api/products
+###
+
+POST http://localhost:3000/api/products
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMDVkYzVmMmU4MmIzNGNhZjUxYTQwNiIsImlhdCI6MTY0NDU1Njk5NCwiZXhwIjoxNjQ0NjQzMzk0fQ.KWNbVp6HERFZnnMkMPSRukx-hugXOUgsGPCJ1dWZgUA
+
+{
+    "name": "monitor",
+    "category": "tecnology",
+    "price": 200,
+    "imgUrl": "atercera.com/resizer/z0N5EUn85NEmMO0C9VsU_atqEiM=/900x600/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/T7MCB26O7VHETPE2G5Z62TY6HM.png"
+}
+###
+GET http://localhost:3000/api/products/6204b0e219e5699bc97e5ec3
+
+###
+PUT http://localhost:3000/api/products/6205a9a788ee1db46774ad0a
+Content-Type: application/json
+
+{
+    
+    "imgUrl": "https://www.digitalavmagazine.com/wp-content/uploads/2020/08/Philips-279C9.jpg"
+}
+###
+DELETE http://localhost:3000/api/products/6205a9a788ee1db46774ad0a

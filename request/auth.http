@@ -1,0 +1,20 @@
+POST http://localhost:3000/api/auth/singup
+Content-Type: application/json
+
+{
+    "username": "perro",
+    "email": "perro@rodri",
+    "password": "375798",
+    "roles": ["admin"]
+    
+}
+###
+
+POST http://localhost:3000/api/auth/singin
+Content-Type: application/json
+x-access-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyMDVkYzVmMmU4MmIzNGNhZjUxYTQwNiIsImlhdCI6MTY0NDU1Njk5NCwiZXhwIjoxNjQ0NjQzMzk0fQ.KWNbVp6HERFZnnMkMPSRukx-hugXOUgsGPCJ1dWZgUA
+
+{
+    "email": "perro@rodri",
+    "password": "375798"
+}
