@@ -1,10 +1,11 @@
 "use strict";
 
-var _express = _interopRequireDefault(require("express"));
+var _interopRequireDefault = require("@babel/runtime/helpers/interopRequireDefault");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { "default": obj }; }
+var _app = _interopRequireDefault(require("./app"));
 
-var app = (0, _express["default"])();
-app.listen(3000, function (_) {
+var _database = _interopRequireDefault(require("./database"));
+
+_app["default"].listen(3000, function (_) {
   console.log('server on port 3000');
 });
