@@ -6,7 +6,7 @@ import productsRoutes from './routes/products.routes';
 import authRoutes from './routes/auth.routes';
 const app = express();
 createRoles();
-
+app.set('port', process.env.PORT || 3000);
 app.set('pkg', pkg);
 app.use(morgan('dev'));
 app.use(express.json());
